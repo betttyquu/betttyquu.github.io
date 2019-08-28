@@ -85,8 +85,9 @@ $text: #626262;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 16px;
+    font-weight: 400;
 
     &.active {
         overflow: hidden;
@@ -362,6 +363,7 @@ footer {
 
 #lead-content {
     position: absolute;
+    padding-top: 8vw;
     z-index: 10;
     top: 50%;
     left: 50%;
@@ -378,7 +380,7 @@ footer {
         font-size: 5em;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        line-height: 0.9em;
+        line-height: 1.16em;
     }
 
     h2 {
