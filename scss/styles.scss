@@ -25,6 +25,7 @@
         10. Contact Styles
         11. Optional Section Styles
         12. Media Queries
+        13. Background Slides
 */
 
 /*
@@ -47,6 +48,7 @@ $border: #dcd9d9;
 // Define text colors
 $heading: #292929;
 $text: #626262;
+
 
 /*
     ---------------------
@@ -355,10 +357,10 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    // background: url(../images/lead-bg.jpg);
     background-size: cover;
     padding: 15px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 #lead-content {
@@ -366,9 +368,9 @@ footer {
     padding-top: 8vw;
     z-index: 10;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
 
     h1, h2 {
         margin: 0;
@@ -399,19 +401,19 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    // background: rgba($base-color-hover, 0.8);
     z-index: 1;
 }
 
 #lead-down {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 20%;
+    top: 90%;
     width: 100%;
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff;
+    color: black;
 
     span {
         cursor: pointer;
@@ -694,6 +696,18 @@ footer {
     display: none;
 }
 
+.projectImageChange {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 /*
     -------------------------------
     ----- 9. Skills Styles -----
@@ -1004,4 +1018,41 @@ footer {
         }
     }
 
+}
+
+
+/*
+    ------------------------
+    - 13. Background Slides-
+    ------------------------
+*/
+
+
+#slider {
+    padding-top: 20vw;
+    height: 550px;
+    width: 650px;
+    overflow: hidden;
+    // position: absolute;
+    padding-top: 8vw;
+    // padding-right: 200px;
+    z-index: 10;
+    // top: 30%;
+    // transform: translate(-10%, -50%);
+
+
+    .slides {
+        display: block;
+        width: 6000px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide {
+        float: left;
+        list-style-type: none;
+        height: 400px;
+        width: 720px;
+    }
 }
